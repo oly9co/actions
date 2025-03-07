@@ -15,4 +15,4 @@ jobs:
     - name: Create release branch
       run: git checkout -b release/${{ github.event.inputs.versionNumber }}
     - name: Push new branch
-      run: git push -u origin release/${{ github.event.inputs.versionName }}
+      run: git push -u origin release/${{ github.event.inputs.versionName }}:release/${{ github.event.inputs.versionName }}
